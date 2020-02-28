@@ -1,4 +1,4 @@
-
+require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -43,6 +43,7 @@ class Song
     end
       
   def self.alphabetical
+<<<<<<< HEAD
   
     @@all.sort_by(&:name)
   end
@@ -67,6 +68,16 @@ class Song
     @@all.clear
 
   end
+=======
+    
+    @@all.map.sort_by.to_s do
+      |song| song
+      binding.pry
+    end
+  end
+    @all
+end
+>>>>>>> 7bf5bb05d57929c6b387c7089a91d041eeef70e5
   
   def save
     @@all << self
@@ -77,5 +88,8 @@ end
 # puts Song.create 
 # puts Song.new_by_name("The Middle").name 
 
+<<<<<<< HEAD
 # puts Song.new_from_filename("Jimmy Eat World - The Middle.mp3")
+=======
+>>>>>>> 7bf5bb05d57929c6b387c7089a91d041eeef70e5
 
